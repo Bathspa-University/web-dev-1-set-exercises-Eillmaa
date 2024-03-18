@@ -3,30 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Recipe page</title>
+
+<!--here I styled my webpage using different tags-->
 <style>
-    .heading1style{text-align: center;
-    background-color:brown;
-    font-style: italic;
-    border: 5px solid brown;
-    color: white;}
-    .heading2style{background-color: green;
-    color:white;}
+    .img_pizza
+    {
+        float: right;
+        width: 35%;
+        border: 5px solid maroon;
+    }
+    .position_1
+    {
+        position: absolute;
+        width: 70%;
+        left: 11%;
+        background-color:rgb(249, 245, 231);
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .heading1style
+    {
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color:white;
+        background-color: brown;
+        padding: 10px;
+    }
+    .heading2style
+    {
+        color:brown;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .textstyle
+    {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .web_color
+    {
+        background-color: maroon;
+    }
+
 </style>
+
 </head>
-<body>
-<!--Favorite recipe-->
+<body class="web_color"> <!--Here I made it so that the whole webpage background is 1 maroon-->
+
+<div class="position_1"> <!--I used div tag to group the text I want to group together and then i used the class
+        attribute to point to a class name in the style tag area-->
+<header>  <!--I used to header tag here to separte the heading from the rest of the text-->
 <h1 class="heading1style">BBQ Chicken Pizza Recipe</h1>
-<!--The h1 tag is the biggest heading tag and can only be used once in a webpage, the style tag styles the text that 
-    will appear on the webpage-->
-<p>This is a recipe for classic BBQ chicken pizza with tangy BBQ sauce, chicken, and red onion. 
+</header>
+
+<!--Then I used the main tag as this part of the webpage will be my main bodyis and where all the content will be-->
+<main>
+
+<p class="textstyle">This is a recipe for classic BBQ chicken pizza with tangy BBQ sauce, chicken, and red onion. 
     Gouda cheese gives the homemade pizza the most delicious smoky flavor and cilantro adds a touch of freshness.  
     It's an easy thick-style pizza crust with unbeatable flavor.</p>
-<img src="pizza img.png"alt="Pizza" height="250" width="1415"></img>
-<!--The p tag is used to add text as paragraphs-->
+
+<!--Here an image of a pizza will be displayed and if it does not display the text "pizza_image" will be displayed-->
+<img class="img_pizza" src="image.png" alt="pizza_image"></img>
+
 <h2 class="heading2style">Ingredients</h2>
-<ul>  <!--The ul tag creates an unordered list without numbers-->
-    <li>1/2 recipe homemade pizza dough (or 1 lb. store-bought pizza dough)</li> <!--the li tag is where you enter the text you in the list-->
+
+<ul class="textstyle"> <!--The ul tag here means that it does not matter what order the list is in-->
+    <li>1/2 recipe homemade pizza dough (or 1 lb. store-bought pizza dough)</li>
     <li>1 Tablespoon (8g) cornmeal</li>
     <li>1 cup chopped or shredded cooked chicken (about one 8-ounce breast)</li>
     <li>1 Tablespoon (15ml) olive oil, divided</li>
@@ -35,9 +77,12 @@
     <li>1/2 small red onion, thinly sliced</li>
     <li>2/3 cup (70g) shredded smoked gouda cheese</li>
 </ul>
+
 <h2 class="heading2style">Method</h2>
-<ol>  <!--This is a ol tag that numbers the steps to prepare the pizza-->
-    <li>Prepare pizza dough. If using store-bought frozen pizza dough, make sure it's thawed.</li><br> <!--The br tag is used to break the text-->
+
+<ol class="textstyle"> <!--The ol tag will display the method in an ordered way and the I used the br tag to break the text
+                            and to add more space between them-->
+    <li>Prepare pizza dough. If using store-bought frozen pizza dough, make sure it's thawed.</li><br>
     <li>Preheat oven to 246°C (475°F). Allow it to heat for at least 15-20 minutes as you shape the pizza in the next step. 
         Lightly grease a large baking sheet or pizza pan with 1/2 Tablespoon of olive oil. Sprinkle lightly with cornmeal, 
         which gives the crust extra crunch and flavor.</li><br>
@@ -55,5 +100,8 @@
     <li>Bake for 14-15 minutes or until the crust is golden brown. Remove from the oven.</li><br>
     <li>Slice the hot pizza, serve and enjoy!</li>
 </ol>
+</div>
+</main>
+
 </body>
 </html>
